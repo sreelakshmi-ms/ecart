@@ -1,0 +1,78 @@
+<!-- Header-->
+<header class="bg-dark">
+    <div>
+        <div class="text-center text-white">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.postimg.cc/k5KBk8w3/406888.jpg" class="d-block w-100" alt="" style="height: 550px;">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.postimg.cc/G3BZrQGy/DG14803-100115-Complex-Grid-JE-Gold.jpg"
+                            class="d-block w-100" alt="..." style="height: 550px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.postimg.cc/652C57pq/wp8145581.webp" class="d-block w-100" alt="..."
+                            style="height: 550px;">
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container mt-3">
+    <div class="row text-center text-white">
+        <div (click)="categoryProduct('')" class="col-3 p-2 ms-5 rounded-pill" style="height: 80px;width: 22%;background-color:rgb(218, 165, 32);">
+            <h1>All Items</h1>
+        </div>
+        <div (click)="categoryProduct('1')" class="col-3 p-2 ms-4 rounded-pill" style="height: 80px;width: 22%;background-color:goldenrod;">
+            <h1>Rings</h1>
+        </div>
+        <div (click)="categoryProduct('2')" class="col-3 p-2 ms-4 rounded-pill" style="height: 80px;width: 22%;background-color:goldenrod;">
+            <h1>Necklaces</h1>
+        </div>
+        <div (click)="categoryProduct('3')" class="col-3 p-2 ms-4 rounded-pill" style="height: 80px;width: 22%;background-color:goldenrod;">
+            <h1>Earrings</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let i of categoryProducts | search:searchString:'productName'" class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" style="height: 300px;" src={{i.image}} alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{i.productName}}</h5>
+                            <!-- Product price-->
+                            {{i.price}}/-
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="products/view-product/{{i.id}}">View</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

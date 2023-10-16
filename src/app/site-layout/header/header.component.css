@@ -1,0 +1,13 @@
+#a1{
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Raleway', sans-serif;
+text-decoration: none;
+font-size:xx-large;
+}
+nav{
+    background-color: deeppink;
+}
+#btn:hover{
+    background-color:rgba(255, 20, 145, 0.496);;
+}

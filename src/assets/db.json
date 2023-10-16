@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Rose Gold Ring",
+      "categoryId": 1,
+      "description": "Rose Gold Zircon Flowers Crystal Ring",
+      "price": "1299",
+      "image": "https://i.postimg.cc/fTbKhdCp/Whats-App-Image-2023-10-04-at-21-39-10-afe5eb34.jpg",
+      "review": 150,
+      "warrenty": 2,
+      "is_available": true,
+      "rating": 4.5,
+      "vendor_name": "Uniqistic"
+    },
+    {
+      "id": 2,
+      "productName": "Silver Ring",
+      "categoryId": 1,
+      "description": "Classical Silver Twist Crystal Ring",
+      "price": 2499,
+      "image": "https://i.postimg.cc/rFnL8Skr/Whats-App-Image-2023-10-04-at-21-45-21-fbf3fad8.jpg",
+      "review": 100,
+      "warrenty": 2,
+      "is_available": true,
+      "rating": 4.1,
+      "vendor_name": "Etsy"
+    },
+    {
+      "id": 3,
+      "productName": "Silver Necklace",
+      "categoryId": 2,
+      "description": "Maple Leaf Silver Necklace",
+      "price": 3499,
+      "image": "https://i.postimg.cc/Cx0YrFSv/Whats-App-Image-2023-10-04-at-21-52-30-f12e37a5.jpg",
+      "review": 50,
+      "warrenty": 3,
+      "is_available": true,
+      "rating": 4.8,
+      "vendor_name": "Kymond & Co"
+    },
+    {
+      "id": 4,
+      "productName": "Floral Necklace Set",
+      "categoryId": 2,
+      "description": "Floral Pink and Silver Necklace With Earings",
+      "price": 2200,
+      "image": "https://i.postimg.cc/dQTLzVcv/Whats-App-Image-2023-10-04-at-21-58-38-5e6e7035.jpg",
+      "review": 200,
+      "warrenty": 2,
+      "is_available": true,
+      "rating": 4.5,
+      "vendor_name": "AliExpress"
+    },
+    {
+      "id": 5,
+      "productName": "Pearl Studs",
+      "categoryId": 3,
+      "description": "Galatical Pearl Studs Surrounded By Golden Rings ",
+      "price": 599,
+      "image": "https://i.postimg.cc/NfKqN537/Whats-App-Image-2023-10-04-at-22-03-42-10edeafe.jpg",
+      "review": 180,
+      "warrenty": 1,
+      "is_available": true,
+      "rating": 5,
+      "vendor_name": "Shein"
+    },
+    {
+      "id": "6",
+      "productName": "Cuff Ring",
+      "categoryId": "1",
+      "description": "Latest Butterfly Detail Cuff Ring",
+      "price": "499",
+      "is_available": "yes",
+      "image": "https://i.postimg.cc/W4kZCDYR/Whats-App-Image-2023-10-05-at-09-20-136348421a.jpg",
+      "rating": "4",
+      "review": "67",
+      "vendor_name": "Shein",
+      "warrenty": "2"
+    }
+  ]
+}
